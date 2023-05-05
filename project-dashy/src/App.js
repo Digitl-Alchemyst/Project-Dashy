@@ -11,7 +11,7 @@ import Contacts from './scenes/Contacts';
 import Clients from './scenes/Clients';
 // import Bar from './scenes/bar';
 // import Line from './scenes/line';
-// import Form from './scenes/form';
+import Form from './scenes/form';
 // import Pie from './scenes/faq';
 // import Geography from './scenes/geography';
 // import FAQ from './scenes/faq';
@@ -42,7 +42,7 @@ function App() {
               <Route path="/clients" element={<Clients />} />
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
-              {/* <Route path="/form" element={<Form />} /> */}
+              <Route path="/form" element={<Form />} />
               {/* <Route path="/pie" element={<Pie />} /> */}
               {/* <Route path="/geography" element={<Geography />} /> */}
               {/* <Route path="/faw" element={<FAQ />} /> */}
