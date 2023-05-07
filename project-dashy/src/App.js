@@ -14,7 +14,7 @@ import Clients from './scenes/Clients';
 import Form from './scenes/form';
 // import Pie from './scenes/faq';
 // import Geography from './scenes/geography';
-// import FAQ from './scenes/faq';
+import FAQ from './scenes/faq';
 import Calendar from './scenes/calendar';
 
 
@@ -45,7 +45,7 @@ function App() {
               <Route path="/form" element={<Form />} />
               {/* <Route path="/pie" element={<Pie />} /> */}
               {/* <Route path="/geography" element={<Geography />} /> */}
-              {/* <Route path="/faw" element={<FAQ />} /> */}
+              <Route path="/faq" element={<FAQ />} />
               <Route path="/calendar" element={<Calendar />} />
               
               </Routes>
