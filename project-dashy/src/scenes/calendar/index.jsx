@@ -88,7 +88,7 @@ const Calendar = () => {
                         headerToolbar={{
                             left: "prev,next today",
                             center: "title",
-                            right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
+                            right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
                         }}
                         // events={currentEvents}
                         editable={true}
