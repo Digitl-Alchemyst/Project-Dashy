@@ -11,7 +11,7 @@ const Faq = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px" width="95%">
       <Header title="FAQ" subtitle="FAQ Page" />
 
       <Accordion defaultExpanded>
