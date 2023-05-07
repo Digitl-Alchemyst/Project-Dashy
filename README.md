@@ -6,21 +6,21 @@
 <ul><b>Development Enviroment</b></ul>
 </h2>
 
-    <h4>
-    Frontend
-        => React.js
-           Redux
-        => Material UI
-    Middleware
-        => GraphQL
-        => Apollo Client / graphql-compose-mongoose / Apollo
-        => Express.js
-    Backend
-        => Node.js
-           Express.js
-    Datamanagement
-        => MongoDB
-    </h4>
+<h4>
+    Frontend<br>
+        => React.js<br>
+           Redux<br>
+        => Material UI<br>
+    Middleware<br>
+        => GraphQL<br>
+        => Apollo Client / graphql-compose-mongoose / Apollo<br>
+        => Express.js<br>
+    Backend<br>
+        => Node.js<br>
+           Express.js<br>
+    Datamanagement<br>
+        => MongoDB<br>
+</h4>
 
 <h2>
 <ul><b>Project Stages</b></ul>
@@ -50,10 +50,20 @@
 
             => Project managment, photo video managment sorted by project & location
 
+<h2>
+<ul><b>Project Stage Details</b></ul>
+</h2>
+
+##  Project-Dashy
+
+**Project Dependencies**
+
+    npm install 
 
 
-    Project Elsa
+##  Project Elsa
+
         Using state to manage take off
-            state for selected item, individual item count,
-            array of items in use
-                this should be an array of arrays that on the front end appears as folders of items on the side bar
+            ✲   state for selected item, individual item count,
+            ✲   array of items in use
+                 ↬  this should be an array of arrays that on the front end appears as folders of items on the side bar

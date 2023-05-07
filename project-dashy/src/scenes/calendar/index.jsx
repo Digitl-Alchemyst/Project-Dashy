@@ -80,6 +80,37 @@ const Calendar = () => {
                 </Box>    
                 {/* Calendar Topbar */}
                 {/* Calendar Body */}
+                <Box flex="1 1 100%" ml="15px">
+                    <FullCalendar
+                        height="75vh"
+                        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, listPlugin]}
+                        initialView="dayGridMonth"
+                        headerToolbar={{
+                            left: "prev,next today",
+                            center: "title",
+                            right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
+                        }}
+                        // events={currentEvents}
+                        editable={true}
+                        selectable={true}
+                        selectMirror={true}
+                        dayMaxEvents={true}
+                        // weekends={true}
+                        initialEvents={[
+                            {id: '1', title: 'All Day Event', date: "2023-05-14T10:30:00", end: "2023-05-14T12:80:00"},
+                            {id: '2', title: 'Timed Event', date: "2023-05-15T10:30:00", end: "2023-05-15T12:80:00"},
+                        ]} // alternatively, use the `events` setting to fetch from a feed
+                        select={handleDateClick}
+                        // eventContent={renderEventContent} // custom render function
+                        eventClick={handleEventClick}
+                        eventsSet={(events) => setCurrentEvents(events)} // called after events are initialized/added/changed/removed
+                        /* you can update a remote database when these fire:
+                        eventAdd={function(){}}
+                        eventChange={function(){}}
+                        eventRemove={function(){}}
+                        */
+                    />
+                </Box>
                 {/* Calendar Footer */}
 
                 
