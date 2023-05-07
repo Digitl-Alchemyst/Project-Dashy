@@ -1,28 +1,30 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Box, Button, TextField, Typography } from "@mui/material";
 import Header from '../../components/Header';
+import { Box, Button, TextField, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 
 // define initial values for client contact form
 const initialValuesClients = {
-    companyName: '',
-    email: '',
-    phone1: '',
-    phone2: '',
-    website: '',
-    address1: '',
-    address2: '',
-    city: '',
-    state: '',
-    zip: '',
-    country: '',
-    primaryContactName: '',
-    primaryContactEmail: '',
-    primaryContactPhone: '',
+    companyName: 'Decima Tech Solutions',
+    email: 'decima.techsolutions@gmail.com',
+    phone1: '7209303876',
+    phone2: '7204513767',
+    website: 'decima-tech.dx.am',
+    address1: '1410 Humboldt Street',
+    address2: 'Apt #1',
+    city: 'Denver',
+    state: 'Colorado',
+    zip: '80218',
+    country: 'United States',
+    primaryContactName: 'Steven Watkins',
+    primaryContactPosition: 'CEO',
+    primaryContactEmail: 'stevenrwatkins86@gmail.com',
+    primaryContactPhone: '7204513767',
 };
 
+// define phone number validation format
 const phoneRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
 
@@ -44,6 +46,7 @@ const userSchemaClients = Yup.object().shape({
     zip: Yup.string(),
     country: Yup.string(),
     primaryContactName: Yup.string().required('Required'),
+    primaryContactName: Yup.string(),
     primaryContactEmail: Yup.string().email('Invalid email'),
     primaryContactPhone: Yup
     .string()
@@ -52,32 +55,32 @@ const userSchemaClients = Yup.object().shape({
 
 // Add client contact form
 const Form = () => {
-    const isNonMobile = useMediaQuery('(min-width:600px)');
-
+    const isNonMobile = useMediaQuery("(min-width:600px)");
+  
     const handleFormSubmit = (values) => {
-        console.log(values);
+      console.log(values);
     };
-
-    return <Box m="20px">
-        <Header 
-            title="Contact Submission Form"
-            subtitle="Add a contact to your list"
-        />
+  
+    return (
+      <Box m="20px">
+        <Header title="CREATE USER" subtitle="Create a New User Profile" />
+  
         <Formik
-            onSubmit={handleFormSubmit}
+          onSubmit={handleFormSubmit}
             initialValues={initialValuesClients}
             validationSchema={userSchemaClients}
         >
-            {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
-                <form onSubmit={handleSubmit}>
-                    <Box
-                        display="grid"
-                        gap="30px"
-                        gridTemplateColumns="repeat(4, minmax(0, 1fr))"
-                        sx={{
-                            "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
-                        }}
-                    >
+          {({ values, errors, touched, handleBlur, handleChange, handleSubmit, }) => (
+            <form onSubmit={handleSubmit}>
+              <Box
+                display="grid"
+                gap="30px"
+                gridTemplateColumns="repeat(4, minmax(0, 1fr))"
+                sx={{
+                  "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
+                }}
+              >
+  
                         <TextField
                             fullWidth
                             variant='filled'
@@ -125,7 +128,7 @@ const Form = () => {
                             onBlur={handleBlur}
                             onChange={handleChange}
                             value={values.city}
-                            name='companyName'
+                            name='city'
                             error={!!touched.city && !!errors.city}
                             helperText={touched.city && errors.city}
                             sx={{ gridColumn: "span 2"}}
@@ -203,7 +206,7 @@ const Form = () => {
                             onBlur={handleBlur}
                             onChange={handleChange}
                             value={values.email}
-                            name='country'
+                            name='email'
                             error={!!touched.email && !!errors.email}
                             helperText={touched.email && errors.email}
                             sx={{ gridColumn: "span 2"}}
@@ -232,7 +235,20 @@ const Form = () => {
                             name='primaryContactName'
                             error={!!touched.primaryContactName && !!errors.primaryContactName}
                             helperText={touched.primaryContactName && errors.primaryContactName}
-                            sx={{ gridColumn: "span 4"}}
+                            sx={{ gridColumn: "span 2"}}
+                        />
+                        <TextField
+                            fullWidth
+                            variant='filled'
+                            type='text'
+                            label='Primary Contact Position'
+                            onBlur={handleBlur}
+                            onChange={handleChange}
+                            value={values.primaryContactPosition}
+                            name='primaryContactPosition'
+                            error={!!touched.primaryContactPosition && !!errors.primaryContactPosition}
+                            helperText={touched.primaryContactPosition && errors.primaryContactPosition}
+                            sx={{ gridColumn: "span 2"}}
                         />
                         <TextField
                             fullWidth
@@ -242,7 +258,7 @@ const Form = () => {
                             onBlur={handleBlur}
                             onChange={handleChange}
                             value={values.primaryContactPhone}
-                            name='phone1'
+                            name='primaryContactPhone'
                             error={!!touched.primaryContactPhone && !!errors.primaryContactPhone}
                             helperText={touched.primaryContactPhone && errors.primaryContactPhone}
                             sx={{ gridColumn: "span 2"}}
@@ -255,37 +271,24 @@ const Form = () => {
                             onBlur={handleBlur}
                             onChange={handleChange}
                             value={values.primaryContactEmail}
-                            name='country'
+                            name='primaryContactEmail'
                             error={!!touched.primaryContactEmail && !!errors.primaryContactEmail}
                             helperText={touched.primaryContactEmail && errors.primaryContactEmail}
                             sx={{ gridColumn: "span 2"}}
-                        />
+                        />                
+                        </Box>
 
-                        <Button
-
-                            type='submit'
-                            variant='contained'
-                            sx={{ gridColumn: "span 4"}}
-                        >
-                         Add New Client
-                        </Button>
-
-// add a button that when clicked adds 3 new form fills for a new Contact
-                        <Button
-                            type='submit'
-                            variant='contained'
-                            sx={{ gridColumn: "span 4"}}
-                        >
-                            Add New Contact
-                        </Button>
-
-                    
-                
-                    </Box>
+{/* A button to submit the form data to a json file */}
+                            <Box display="flex" justifyContent="end" mt="20px">
+                                <Button type="submit" color="secondary" variant="contained">
+                                    Create New User
+                                </Button>
+                            </Box>
                 </form>
-            )}
-      </Formik>
-    </Box>
-};
+                )}
+            </Formik>
+        </Box>
+    );
+    };
 
 export default Form;
