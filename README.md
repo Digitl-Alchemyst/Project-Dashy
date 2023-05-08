@@ -20,6 +20,8 @@
            Express.js<br>
     Datamanagement<br>
         => MongoDB<br>
+    Authentication<br>
+        => OTP Verification, JWT Token, Bcrypt
 </h4>
 
 <h2>
@@ -59,6 +61,10 @@
 **Project Dependencies**
 
     npm install 
+
+##  Project Susie
+
+
 
 
 ##  Project Elsa
