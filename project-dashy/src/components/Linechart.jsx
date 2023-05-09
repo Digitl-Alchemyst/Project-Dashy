@@ -41,7 +41,8 @@ const LineChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "dark2" }}
+      colors={isDashboard ? { scheme: "dark2" } : { scheme: "dark2" }} 
+    // datum: "color" 
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -78,7 +79,7 @@ const LineChart = ({ isDashboard = false }) => {
       pointColor={{ from: "color", modifiers: [] }}
       pointBorderWidth={4}
       pointBorderColor={{ from: "serieColor" }}
-      enablePointLabel={true}
+      enablePointLabel={false}
       pointLabelYOffset={-11}
       enableArea={true}
       areaBlendMode="multiply"

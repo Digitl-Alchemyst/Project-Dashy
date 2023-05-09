@@ -48,9 +48,9 @@ const GeographyChart = ({ isDashboard = false }) => {
       projectionScale={isDashboard ? 40 : 155}
       projectionTranslation={isDashboard ? [0.49, 0.06] : [0.5, 0.5]}
       projectionRotation={[-3, 0, 0]}
-    //   enableGraticule={true}
-    //   graticuleLineColor="#dddddd"
-    //     graticuleLineWidth={0.59}
+      //   enableGraticule={true}
+      //   graticuleLineColor="#dddddd"
+      //     graticuleLineWidth={0.59}
       borderWidth={0.5}
       borderColor="#787f87"
       defs={[
@@ -76,7 +76,7 @@ const GeographyChart = ({ isDashboard = false }) => {
           },
           id: "gradient",
         },
-        ]}
+      ]}
       legends={
         !isDashboard
           ? [
@@ -97,7 +97,7 @@ const GeographyChart = ({ isDashboard = false }) => {
                   {
                     on: "hover",
                     style: {
-                      itemTextColor: "#ffffff",
+                      itemTextColor: colors.grey[300],
                       itemOpacity: 1,
                     },
                   },
