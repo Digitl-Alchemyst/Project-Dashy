@@ -9,8 +9,6 @@
             => Admin Dashboard providing an overview of tracked data through charts, events management 
             through calendar, and contact management & invoice tracking through data grids
 
-Project Dashy
-
 <h2>
 <ul><b>Development Enviroment</b></ul>
 </h2>
