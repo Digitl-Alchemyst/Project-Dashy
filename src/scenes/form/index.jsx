@@ -1,7 +1,7 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import Header from '../../components/Header';
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 
@@ -46,11 +46,9 @@ const userSchemaClients = Yup.object().shape({
     zip: Yup.string(),
     country: Yup.string(),
     primaryContactName: Yup.string().required('Required'),
-    primaryContactName: Yup.string(),
+    primaryContactPosition: Yup.string(),
     primaryContactEmail: Yup.string().email('Invalid email'),
-    primaryContactPhone: Yup
-    .string()
-    .matches (phoneRegExp, 'Phone number is not valid')
+    primaryContactPhone: Yup.string().matches (phoneRegExp, 'Phone number is not valid')
 });
 
 // Add client contact form
