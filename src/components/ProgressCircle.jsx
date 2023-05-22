@@ -15,7 +15,6 @@ const ProgressCircle = ({ progress = "0.75", size = "40" }) => {
             ${colors.greenAccent[500]}`,
         borderRadius: "50%",
         // borderColor: "${colors.blueAccent[800]}",
-
       }}
     />
   );

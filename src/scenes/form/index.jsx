@@ -10,18 +10,18 @@ const initialValuesClients = {
     companyName: 'Decima Tech Solutions',
     email: 'decima.techsolutions@gmail.com',
     phone1: '7209303876',
-    phone2: '7204513767',
+    phone2: '',
     website: 'decima-tech.dx.am',
-    address1: '1410 Humboldt Street',
-    address2: 'Apt #1',
+    address1: '',
+    address2: '',
     city: 'Denver',
     state: 'Colorado',
     zip: '80218',
     country: 'United States',
     primaryContactName: 'Steven Watkins',
     primaryContactPosition: 'CEO',
-    primaryContactEmail: 'stevenrwatkins86@gmail.com',
-    primaryContactPhone: '7204513767',
+    primaryContactEmail: '',
+    primaryContactPhone: '',
 };
 
 // define phone number validation format
