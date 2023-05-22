@@ -6,7 +6,8 @@
 
 ###
 
-            => Admin Dashboard providing an overview of tracked data through charts, events management through calendar, and contact management & invoice tracking through data grids
+            => Admin Dashboard providing an overview of tracked data through charts, events management 
+            through calendar, and contact management & invoice tracking through data grids
 
 Project Dashy
 
