@@ -1,11 +1,14 @@
-Project-Dashy
-## **Project-Dahsy**
-
-            => Admin Dashboard providing an overview of tracked data through charts, events management through calendar, and contact management & invoice tracking through data grids 
-
 <h1>
-<ul><b>Project Dashy</b></ul>
+<ul><b>
+**Project-Dahsy**
+</b></ul>
 </h1>
+
+###
+
+            => Admin Dashboard providing an overview of tracked data through charts, events management through calendar, and contact management & invoice tracking through data grids
+
+Project Dashy
 
 <h2>
 <ul><b>Development Enviroment</b></ul>
@@ -22,7 +25,6 @@ Project-Dashy
         => Nivo<br>
         => Formik<br>
 </h4>
-
 
 <h3>
 <ul><b>How to use</b></ul>
@@ -54,7 +56,6 @@ Project-Dashy
 <h1>
 <ul><b>Project Stage Details</b></ul>
 </h1>
-
 
 <br>
 <p>UI Element Updates<br>
