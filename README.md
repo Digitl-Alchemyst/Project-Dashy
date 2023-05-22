@@ -15,8 +15,6 @@ Project Dashy
 <ul><b>Development Enviroment</b></ul>
 </h2>
 
-## 
-
 <h4>
     Frontend<br>
         => React.js<br>
