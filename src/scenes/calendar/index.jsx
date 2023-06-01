@@ -51,31 +51,27 @@ const Calendar = () => {
 
   return (
     <Box m="20px">
-      <Header title="Calendar" subtitle="Fully interactive calendar" />
+      <Header title="Calendar" subtitle="Interactive Calendar & Event Tracker" />
 
       <Box
         display="flex"
         flexDirection="row"
         justifyContent="space-between"
-        alignItems="center"
+        alignItems="end"
+        
       >
-        <Typography variant="h6" component="h2">
-          Events
-        </Typography>
-        <Typography variant="h6" component="h2">
-          Today
-        </Typography>
         {/* Calendar Sidebar */}
         <Box
           display="flex"
           flexDirection="column"
-          justifyContent="space-between"
+          justifyContent="start"
           alignItems="center"
           backgroundColor={colors.primary[400]}
           borderRadius="10px"
           p="10px"
-          width="200px"
-          height="300px"
+          width="175px"
+          height="76.5vh"
+          boxShadow="0 2px 5px rgba(0, 0, 0, 0.3)"
         >
           <Typography variant="h5">Upcoming Events</Typography>
           <List>
@@ -83,8 +79,11 @@ const Calendar = () => {
               <ListItem
                 key={event.id}
                 sx={{
-                  backgroundColor: colors.greenAccent[500],
+                  backgroundColor: colors.greenAccent[600],
                   borderRadius: "10px",
+                  border: "1px solid",
+                  borderColor: colors.greenAccent[800],
+                  boxShadow: "0px 0px 3px 0px rgba(0,0,0,0.60)",
                   margin: "10px 0px",
                 }}
               >
@@ -104,9 +103,27 @@ const Calendar = () => {
             ))}
           </List>
         </Box>
-        {/* Calendar Topbar */}
+
         {/* Calendar Body */}
-        <Box flex="1 1 100%" ml="15px">
+        <Box
+                    sx={{
+                      ".fc-toolbar.fc-header-toolbar": {
+                        backgroundColor: colors.primary[900],
+                        color: colors.primary[50],
+                        borderTopLeftRadius: "10px",
+                        borderTopRightRadius: "10px",
+                        margin: "-8px",
+                        padding: "3px",
+                        
+                      }
+                    }}
+          flex="1 1 100%"
+          ml="15px"
+          backgroundColor={colors.primary[400]}
+          borderRadius="10px"
+          padding="8px"
+          boxShadow="0 2px 5px rgba(0, 0, 0, 0.3)"
+        >
           <FullCalendar
             height="75vh"
             plugins={[
@@ -116,12 +133,14 @@ const Calendar = () => {
               listPlugin,
             ]}
             initialView="dayGridMonth"
+            
             headerToolbar={{
               left: "prev,next today",
               center: "title",
               right:
                 "dayGridMonth,timeGridWeek,timeGridDay,listMonth,listWeek,listDay",
             }}
+
             // events={currentEvents}
             editable={true}
             selectable={true}
@@ -147,10 +166,10 @@ const Calendar = () => {
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)} // called after events are initialized/added/changed/removed
             /* you can update a remote database when these fire:
-                        eventAdd={function(){}}
-                        eventChange={function(){}}
-                        eventRemove={function(){}}
-                        */
+                          eventAdd={function(){}}
+                          eventChange={function(){}}
+                          eventRemove={function(){}}
+                          */
           />
         </Box>
         {/* Calendar Footer */}

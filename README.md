@@ -91,9 +91,10 @@
 </p>
 <p>Calandar<br>
     <list>
-        <li>Upcoming Events styling needs major fix</li>
-        <li>Add more styling for a better look</li>
+        <li>X Upcoming Events styling needs major fix</li>
+        <li>X Add more styling for a better look</li>
         <li>Make event entry form if possible, check Full Calendar Docs</li>
+        <li>Add State Management to remember events</li>
     </list>
 </p>
 <p>FAQ<br>
