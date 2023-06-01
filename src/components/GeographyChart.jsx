@@ -45,8 +45,8 @@ const GeographyChart = ({ isDashboard = false }) => {
       unknownColor="#dbe8eb"
       label="properties.name"
       valueFormat=".2s"
-      projectionScale={isDashboard ? 40 : 155}
-      projectionTranslation={isDashboard ? [0.49, 0.06] : [0.5, 0.5]}
+      projectionScale={isDashboard ? 60 : 155}
+      projectionTranslation={isDashboard ? [0.45, 0.50] : [0.5, 0.5]}
       projectionRotation={[-3, 0, 0]}
       //   enableGraticule={true}
       //   graticuleLineColor="#dddddd"

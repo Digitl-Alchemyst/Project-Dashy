@@ -62,15 +62,18 @@
         <li>Update Color Palette</li>
         <li>Style Scroll Bar for Sidebar</li>
         <li>Update Topbar: Sizing & Box Colors</li>
+        <li>Wrap App in Login</li>
     </list>
 </p>
 <br>
 <h2>Dashboard</h2>
 <p>Element Styling<br>
     <list>
-        <li>Campaign Widget: Title position</li>
-        <li>Sales Widget: Graph position</li>
-        <li>Geo Widget: Map Sizing</li>
+        <li>X Campaign Widget: Title position</li>
+        <li>X Sales Widget: Graph position</li>
+        <li>X Sales Widget: Graph Size</li>
+        <li>X Geo Widget: Map Sizing</li>
+        <li>X Campaign Widget: ProgressCircle Size</li>
     </list>
     <br>Widgets<br>
     <list>

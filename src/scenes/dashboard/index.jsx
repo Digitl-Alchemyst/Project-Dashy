@@ -250,20 +250,24 @@ const Dashboard = () => {
 
         {/* Row 3 Widgets */}
 
-        {/*  */}
+        {/* Campaign Progress Circle */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[600]}
-            borderRadius="5px"
-            border="2px solid"
-            borderColor={colors.blueAccent[800]}
+          borderRadius="5px"
+          border="2px solid"
+          borderColor={colors.blueAccent[800]}
           p="30x"
+          display="flex" // Add this line
+          flexDirection="column" // Add this line
+          justifyContent="space-between" // Add this line
         >
           <Typography
             variant="h5"
             fontWeight="600"
             color={colors.grey[100]}
+            sx={{ p: "15px 15px 15px" }}
           >
             Campaign
           </Typography>
@@ -271,13 +275,12 @@ const Dashboard = () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            mt="25px"
           >
-            <ProgressCircle size="125" />
+            <ProgressCircle size="130" />
             <Typography
               variant="h5"
               color={colors.greenAccent[400]}
-              sx={{ mt: "15px" }}
+              sx={{ mt: "30px" }}
             >
               $34,234.00 Generated
             </Typography>
@@ -285,20 +288,20 @@ const Dashboard = () => {
           </Box>
         </Box>
 
-        {/*  */}
+        {/* Sales Quantity Bar Chart */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[600]}
-            borderRadius="5px"
-            border="2px solid"
-            borderColor={colors.blueAccent[800]}
+          borderRadius="5px"
+          border="2px solid"
+          borderColor={colors.blueAccent[800]}
         >
           <Typography
             variant="h5"
             fontWeight="600"
             color={colors.grey[100]}
-            sx={{ p: "30px 30px 30px" }}
+            sx={{ p: "15px 15px 15px" }}
           >
             Sales Quantity
           </Typography>
@@ -307,21 +310,22 @@ const Dashboard = () => {
           </Box>
         </Box>
 
-        {/*  */}
+        {/* Sales Location Heat Map */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[600]}
-            borderRadius="5px"
-            border="2px solid"
-            borderColor={colors.blueAccent[800]}
-          p="30px"
+          borderRadius="5px"
+          border="2px solid"
+          borderColor={colors.blueAccent[800]}
+          // p="30px"
         >
           <Typography
             variant="h5"
             fontWeight="600"
             // color={colors.grey[100]}
-            sx={{ mb: "15px" }}
+            // sx={{ mb: "15px" }}
+            sx={{ p: "15px 15px 15px" }}
           >
             Project Geographical Locations
           </Typography>
@@ -329,8 +333,6 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-
-        {/* //Top 2 boxes */}
       </Box>
     </Box>
   );
