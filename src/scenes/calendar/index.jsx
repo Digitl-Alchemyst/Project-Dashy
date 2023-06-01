@@ -117,7 +117,16 @@ const Calendar = () => {
             },
             ".fc-toolbar-title": {
               fontSize: "2.2rem",                      
-            }
+            },
+            ".fc-daygrid-day.fc-day-today": {
+              backgroundColor: colors.blueAccent[500],
+
+              opacity: "0.4",                      
+            },
+            // "fc-daygrid-day-frame": {
+            //   backgroundColor: colors.greenAccent[900],
+            //   opacity: "0.5",                      
+            // },
           }}
           flex="1 1 100%"
           ml="15px"
