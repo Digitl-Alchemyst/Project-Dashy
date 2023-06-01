@@ -3,18 +3,17 @@ import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
-// import ProgressCircle from "../../components/ProgressCircle";
 import LineChart from "../../components/Linechart";
 import BarChart from "../../components/Barchart";
-import PieChart from "../../components/Piechart";
 import GeographyChart from "../../components/GeographyChart";
+import ProgressCircle from "../../components/ProgressCircle";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import EmailIcon from "@mui/icons-material/Email";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import { mockTransactions } from "../../data/mockData";
-import ProgressCircle from "../../components/ProgressCircle";
+
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -50,6 +49,7 @@ const Dashboard = () => {
         gridGap="20px"
         mt="20px"
         gridAutoRows="140px"
+        
         // margin="5px"
       >
         {/* Stat Boxes #1 */}
@@ -62,6 +62,7 @@ const Dashboard = () => {
           borderRadius="5px"
           border="2px solid"
           borderColor={colors.blueAccent[800]}
+          
         >
           <StatBox
             title="9245"
@@ -284,7 +285,11 @@ const Dashboard = () => {
             >
               $34,234.00 Generated
             </Typography>
-            <Typography>Includes Misc Expenditures</Typography>
+            <Typography
+              sx={{ mb: "10px" }}
+            >
+              Includes Misc Expenditures
+            </Typography>
           </Box>
         </Box>
 
