@@ -1,4 +1,4 @@
-import { useTheme, Box } from "@mui/material";
+import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { ResponsiveLine } from "@nivo/line";
 import { mockLineData as data } from "../data/mockData";
@@ -41,8 +41,8 @@ const LineChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      colors={isDashboard ? { scheme: "dark2" } : { scheme: "dark2" }} 
-    // datum: "color" 
+      colors={isDashboard ? { scheme: "dark2" } : { scheme: "dark2" }}
+      // datum: "color"
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{

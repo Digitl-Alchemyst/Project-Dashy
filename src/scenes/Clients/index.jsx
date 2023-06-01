@@ -1,14 +1,9 @@
 import { Box } from '@mui/material';
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from '../../theme';
-// import { mockClients } from '../../data/mockData';
 import data from '../../data/mockClients.json';
-// import { Button } from '@mui/material';
 import Header from "../../components/Header";
 import { useTheme } from '@mui/material';
-// import the icons for the buttons
-import AdminPanelSettingsOutlinedIcon from '@mui/icons-material/AdminPanelSettingsOutlined';
-import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import Button from '@mui/material/Button';
 import { useState } from 'react';

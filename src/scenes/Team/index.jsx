@@ -1,10 +1,8 @@
 import { Box, Typography, useTheme } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import { tokens } from '../../theme';
-// import { mockDataTeam } from '../../data/mockData';
 import data from '../../data/mockTeam.json';
-import { Button } from '@mui/material';
-import { AdminPanelSettingsOutlined as AdminPanelSettingsOutlinedIcon, FamilyRestroomSharp } from '@mui/icons-material'; // Fix import statement
+import { AdminPanelSettingsOutlined as AdminPanelSettingsOutlinedIcon } from '@mui/icons-material'; // Fix import statement
 import { LockOpenOutlined as LockOpenOutlinedIcon } from '@mui/icons-material'; // Fix import statement
 import { SecurityOutlined as SecurityOutlinedIcon } from '@mui/icons-material'; // Fix import statement
 import Header from "../../components/Header";
