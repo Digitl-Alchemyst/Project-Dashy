@@ -106,17 +106,19 @@ const Calendar = () => {
 
         {/* Calendar Body */}
         <Box
-                    sx={{
-                      ".fc-toolbar.fc-header-toolbar": {
-                        backgroundColor: colors.primary[900],
-                        color: colors.primary[50],
-                        borderTopLeftRadius: "10px",
-                        borderTopRightRadius: "10px",
-                        margin: " -8px -8px 8px -8px ",
-                        padding: "3px",
-                        
-                      }
-                    }}
+          sx={{
+            ".fc-toolbar.fc-header-toolbar": {
+              backgroundColor: colors.primary[900],
+              color: colors.primary[50],
+              borderTopLeftRadius: "10px",
+              borderTopRightRadius: "10px",
+              margin: " -8px -8px 8px -8px ",
+              padding: "15px 10px 12px 10px",                        
+            },
+            ".fc-toolbar-title": {
+              fontSize: "2.2rem",                      
+            }
+          }}
           flex="1 1 100%"
           ml="15px"
           backgroundColor={colors.primary[400]}
