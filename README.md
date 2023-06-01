@@ -57,11 +57,11 @@
 </h1>
 
 <br>
-<p>UI Element Updates<br>
+<p>UI Element & Styling Updates<br>
     <list>
         <li>Update Color Palette</li>
-        <li>Style Scroll Bar for Sidebar</li>
-        <li>Update Topbar: Sizing & Box Colors</li>
+        <li>Add shadows globally</li>
+        <li>Create Yellow, Orange & Purple Accent Paletes</li>
         <li>Wrap App in Login</li>
     </list>
 </p>
@@ -75,11 +75,61 @@
         <li>X Geo Widget: Map Sizing</li>
         <li>X Campaign Widget: ProgressCircle Size</li>
     </list>
-    <br>Widgets<br>
+    <br>Widgets to Add<br>
     <list>
         <li>Favorite Contacts List</li>
         <li>2nd line of Nivo charts</li>
         <li>Toggle between 1 or 2 rows of Nivo charts</li>
+    </list>
+</p>
+<br>
+<h2>Sidebar</h2>
+<p>Element Styling<br>
+    <list>
+        <li>Scrollbar Styling</li>
+        <li>Resizing of Eext</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </list>
+    <br>Widgets to Add<br>
+    <list>
+        <li></li>
+        <li></li>
+        <li></li>
+    </list>
+</p>
+<br>
+<h2>Topbar</h2>
+<p>Element Styling<br>
+    <list>
+        <li>Wrap in Box</li>
+        <li>Restyle</li>
+        <li>Resize</li>
+        <li></li>
+        <li></li>
+    </list>
+    <br>Widgets to Add<br>
+    <list>
+        <li></li>
+        <li></li>
+        <li></li>
+    </list>
+</p>
+<br>
+<br>
+<p>Contacts/Team/Clients<br>
+    <list>
+        <li></li>
+        <li></li>
+        <li></li>
+    </list>
+</p>
+<p>Invoices<br>
+    <list>
+        <li></li>
+        <li></li>
+        <li></li>
     </list>
 </p>
 <p>Form<br>

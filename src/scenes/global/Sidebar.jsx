@@ -64,41 +64,58 @@ const Sidebar = () => {
       <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
-          <MenuItem
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
-            style={{
-              margin: "10px 0 20px 0",
-              color: colors.grey[300],
-            }}
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mr="15px"
           >
-            {!isCollapsed && (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                ml="15px"
-              >
-                <Typography variant="h3" color={colors.grey[300]}>
-                  DASHY
-                </Typography>
-                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon />
-                </IconButton>
-              </Box>
-            )}
-          </MenuItem>
-
+            <MenuItem
+              onClick={() => setIsCollapsed(!isCollapsed)}
+              icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+              style={{
+                margin: "10px 0 20px 0",
+                color: colors.grey[300],
+              }}
+            >
+              {!isCollapsed && (
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  ml="15px"
+                >
+                  <IconButton onClick={() => setIsCollapsed(!isCollapsed)} >
+                    <MenuOutlinedIcon />
+                  </IconButton>
+                </Box>
+              )}
+            </MenuItem>
+            <Box>
+            <a href="https://github.com/Digitl-Alchemyst/Project-Dashy">
+              <img
+                alt="logo-3"
+                width="140px"
+                height="33px"
+                src={`../../assets/Logo3.png`}
+                style={{ cursor: "pointer" }}
+              />
+              </a>
+            </Box>
+          </Box>
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
+              <a href="https://github.com/Digitl-Alchemyst">
                 <img
                   alt="profile-user"
                   width="100px"
                   height="100px"
                   src={`../../assets/user.jpg`}
+                  
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
+                </a>
               </Box>
               <Box textAlign="center">
                 <Typography
