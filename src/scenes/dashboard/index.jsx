@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
@@ -14,13 +13,12 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import { mockTransactions } from "../../data/mockData";
 
-
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="15px">
       {/* Header */}
       <Box display="flex" justifyContent="space-between" allignItems="center">
         <Header title="Dashboard" subtitle="Welcome to the Dashboard" />
@@ -47,12 +45,10 @@ const Dashboard = () => {
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridGap="20px"
-        mt="20px"
+        mt="10px"
         gridAutoRows="140px"
-        
-        // margin="5px"
       >
-        {/* Stat Boxes #1 */}
+        {/* Stat Box #1 */}
         <Box
           gridColumn="span 3"
           display="flex"
@@ -62,7 +58,6 @@ const Dashboard = () => {
           borderRadius="5px"
           border="2px solid"
           borderColor={colors.blueAccent[800]}
-          
         >
           <StatBox
             title="9245"
@@ -76,7 +71,8 @@ const Dashboard = () => {
             }
           ></StatBox>
         </Box>
-        {/* Stat Boxes #2 */}
+
+        {/* Stat Box #2 */}
         <Box
           gridColumn="span 3"
           display="flex"
@@ -99,7 +95,8 @@ const Dashboard = () => {
             }
           ></StatBox>
         </Box>
-        {/* Stat Boxes  #3 */}
+
+        {/* Stat Box  #3 */}
         <Box
           gridColumn="span 3"
           display="flex"
@@ -122,7 +119,8 @@ const Dashboard = () => {
             }
           ></StatBox>
         </Box>
-        {/* Stat Boxes #4*/}
+
+        {/* Stat Box #4 */}
         <Box
           gridColumn="span 3"
           display="flex"
@@ -145,6 +143,8 @@ const Dashboard = () => {
             }
           ></StatBox>
         </Box>
+
+        {/* Row 3 Widgets */}
 
         {/* Line Chart Widget */}
         <Box
@@ -194,7 +194,7 @@ const Dashboard = () => {
           </Box>
         </Box>
 
-        {/* Bar Chart Widget */}
+        {/* Top Products List */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"
@@ -272,11 +272,7 @@ const Dashboard = () => {
           >
             Campaign
           </Typography>
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-          >
+          <Box display="flex" flexDirection="column" alignItems="center">
             <ProgressCircle size="130" />
             <Typography
               variant="h5"
@@ -285,9 +281,7 @@ const Dashboard = () => {
             >
               $34,234.00 Generated
             </Typography>
-            <Typography
-              sx={{ mb: "10px" }}
-            >
+            <Typography sx={{ mb: "10px" }}>
               Includes Misc Expenditures
             </Typography>
           </Box>
