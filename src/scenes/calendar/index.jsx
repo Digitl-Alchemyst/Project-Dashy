@@ -112,7 +112,7 @@ const Calendar = () => {
                         color: colors.primary[50],
                         borderTopLeftRadius: "10px",
                         borderTopRightRadius: "10px",
-                        margin: "-8px",
+                        margin: " -8px -8px 8px -8px ",
                         padding: "3px",
                         
                       }
