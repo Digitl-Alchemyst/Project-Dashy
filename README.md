@@ -67,7 +67,7 @@
 </p>
 <br>
 <h2>Dashboard</h2>
-<p>Element Styling<br>
+<p>X Element Styling<br>
     <list>
         <li>X Campaign Widget: Title position</li>
         <li>X Sales Widget: Graph position</li>
