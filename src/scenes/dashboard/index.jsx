@@ -47,6 +47,8 @@ const Dashboard = () => {
         gridGap="20px"
         mt="10px"
         gridAutoRows="140px"
+        gap="10px"
+
       >
         {/* Stat Box #1 */}
         <Box
@@ -209,8 +211,8 @@ const Dashboard = () => {
             justifyContent="space-between"
             alignItems="center"
             p="15px"
-            borderBottom={"4px solid ${colors.primary[500]}"}
-            colors={colors.grey[100]}
+            borderBottom={`4px solid ${colors.primary[500]}`} // Modified line
+            color={colors.grey[100]} // Modified line
           >
             <Typography variant="h6" fontWeight="600" color={colors.grey[100]}>
               Top 5 Products
@@ -218,12 +220,12 @@ const Dashboard = () => {
           </Box>
           {mockTransactions.map((transaction, i) => (
             <Box
-              key={"${transaction.txId}-${i}"}
+              key={`${transaction.txId}-${i}`}
               display="flex"
               justifyContent="space-between"
               alignItems="center"
               p="15px"
-              borderBottom={"4px solid ${colors.primary[500]}"}
+              borderBottom={`4px solid ${colors.primary[500]}`}
             >
               <Box>
                 <Typography

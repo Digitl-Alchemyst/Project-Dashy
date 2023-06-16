@@ -14,6 +14,8 @@ const Faq = () => {
     <Box m="20px" width="95%">
       <Header title="FAQ" subtitle="FAQ Page" />
 
+      
+
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
