@@ -66,14 +66,14 @@
     </list>
 </p>
 <br>
-<h2>Dashboard</h2>
-<p>X Element Styling<br>
+<h2>Outlet</h2>
+<p>Element Styling<br>
     <list>
-        <li>X Campaign Widget: Title position</li>
-        <li>X Sales Widget: Graph position</li>
-        <li>X Sales Widget: Graph Size</li>
-        <li>X Geo Widget: Map Sizing</li>
-        <li>X Campaign Widget: ProgressCircle Size</li>
+        <li>Make the outlet box stay in place</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </list>
     <br>Widgets to Add<br>
     <list>
@@ -87,9 +87,9 @@
 <p>Element Styling<br>
     <list>
         <li>Scrollbar Styling</li>
-        <li>Resizing of Eext</li>
-        <li></li>
-        <li></li>
+        <li>Resizing of Text</li>
+        <li>Resze Elements for better fit.</li>
+        <li>Reconnect to dark/light theme</li>
         <li></li>
     </list>
     <br>Widgets to Add<br>
@@ -106,7 +106,7 @@
         <li>Wrap in Box</li>
         <li>Restyle</li>
         <li>Resize</li>
-        <li></li>
+        <li>make sticky</li>
         <li></li>
     </list>
     <br>Widgets to Add<br>
