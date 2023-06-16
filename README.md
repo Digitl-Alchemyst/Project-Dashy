@@ -14,7 +14,7 @@
 </h3>
 
 <a href=""> </a>
-<a href="https://dashy-mauve-seven.vercel.app/" target="blank"><img align="center" src="https://dashy-mauve-seven.vercel.app/assets/Logo3.png" alt="logo" height="65" width="200" /></a>
+<a href="https://dashy-mauve-seven.vercel.app/" target="blank"><img align="center" src="https://dashy-mauve-seven.vercel.app/assets/Logo3.png" alt="logo" height="65" width="230" /></a>
 
 <h2>
 <ul><b>Development Enviroment</b></ul>
