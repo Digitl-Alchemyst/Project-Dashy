@@ -1,4 +1,4 @@
-import { useTheme } from "@mui/material";
+import { useTheme, } from '@mui/material';
 import { tokens } from "../theme";
 import { ResponsivePie } from "@nivo/pie";
 import { mockPieData as data } from "../data/mockData";

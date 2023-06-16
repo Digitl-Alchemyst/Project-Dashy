@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
@@ -12,6 +12,9 @@ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import { mockTransactions } from "../../data/mockData";
+
+import { useTheme, Box, Typography, Button, IconButton } from '@mui/material';
+
 
 const Dashboard = () => {
   const theme = useTheme();

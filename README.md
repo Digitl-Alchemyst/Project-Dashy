@@ -36,13 +36,13 @@
 
 ## Packages
 
-    MUI 5.11.2
-    MUI X-Data-Grid 5.17.2
-    Emotion 11.10.6
-    Formik 2.2.9
-    React Pro Sidebar 0.7.1
-    Full Calendar 5.11.2
-    Nivo 0.80.0
+    MUI 5.11.2 => 5.13.5
+    MUI X-Data-Grid 5.17.2 => 6.8.0
+    Emotion 11.10.6 => 11.11.1
+    Formik 2.2.9 => 2.4.2
+    React Pro Sidebar 0.7.1 => 1.1.0-alpha.1
+    Full Calendar 5.11.2 => 6.1.8
+    Nivo 0.80.0 => 0.83.0
 
 ## Install Node Modules
 

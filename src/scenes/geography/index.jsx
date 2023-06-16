@@ -1,7 +1,11 @@
-import { Box, useTheme } from "@mui/material";
+import { useTheme, Box, } from '@mui/material';
+
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import GeographyChart from "../../components/GeographyChart";
+
+
+
 
 const Geography = () => {
   const theme = useTheme();
