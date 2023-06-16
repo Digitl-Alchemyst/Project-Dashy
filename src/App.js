@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ColorModeContext, useMode} from './theme';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+
 import { Routes, Route } from "react-router-dom";
 import Topbar from './scenes/global/Topbar';
 import Sidebar from './scenes/global/Sidebar';
@@ -16,6 +16,9 @@ import Pie from './scenes/pie';
 import Geography from './scenes/geography';
 import FAQ from './scenes/faq';
 import Calendar from './scenes/calendar';
+
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 

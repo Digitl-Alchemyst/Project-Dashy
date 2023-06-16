@@ -1,11 +1,12 @@
-import { Box } from '@mui/material';
+import { useTheme, Box, } from '@mui/material';
+
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from '../../theme';
-// import { mockDataContacts } from '../../data/mockData';
+
 import data from '../../data/mockContacts.json';
-// import { Button } from '@mui/material';
+
 import Header from "../../components/Header";
-import { useTheme } from '@mui/material';
+
 
 const Contacts = () => {
     const theme = useTheme();
