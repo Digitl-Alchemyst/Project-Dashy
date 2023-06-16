@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { ResponsiveLine } from "@nivo/line";

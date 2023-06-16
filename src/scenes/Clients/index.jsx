@@ -1,11 +1,12 @@
-import { Box } from '@mui/material';
+import { useTheme, Box, Button } from '@mui/material';
+
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from '../../theme';
 import data from '../../data/mockClients.json';
 import Header from "../../components/Header";
-import { useTheme } from '@mui/material';
+
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import Button from '@mui/material/Button';
+
 import { useState } from 'react';
 
 

@@ -3,6 +3,8 @@ import { tokens } from "../theme";
 import { ResponsiveBar } from "@nivo/bar";
 import { mockBarData as data } from "../data/mockData";
 
+
+
 const Barchart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);

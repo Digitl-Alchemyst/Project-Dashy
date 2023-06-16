@@ -36,7 +36,7 @@
 
 ## Packages
 
-    MUI 5.11.2
+    MUI 5.11.2 => 5.13.5
     MUI X-Data-Grid 5.17.2
     Emotion 11.10.6
     Formik 2.2.9
