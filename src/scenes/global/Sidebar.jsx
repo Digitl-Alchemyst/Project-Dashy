@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 
 import { Link } from "react-router-dom";
-import "react-pro-sidebar/dist/css/styles.css";
+// import 'react-pro-sidebar/dist/styles/StyledUI.d';
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -18,51 +18,51 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const itemStyles = {
+    color: selected === title ? "#76DCDC" : "#7994CD",
+    backgroundColor: selected === title ? "#4E7A7A" : undefined,
+
+ };
+
   return (
+    <Link to={to} style={{ textDecoration: 'none' }}>
     <MenuItem
       active={selected === title}
-      style={{
-        color: colors.grey[100],
-      }}
+      style={itemStyles}
       onClick={() => setSelected(title)}
       icon={icon}
+     
     >
-      <Typography>{title}</Typography>
-      <Link to={to} />
+      
+        <Typography>{title}</Typography>
+      
     </MenuItem>
+    </Link>
   );
 };
 
-const Sidebar = () => {
+const SidebarMenu = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
 
   return (
-    <Box
-      sx={{
-        "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+    <Box>
+      <Sidebar collapsed={isCollapsed} rootStyles={{ 
+        "& .ps-sidebar-container":{ 
+          backgroundColor: "transparent !important" 
+        }, 
+        // hange the hover color here
+        border: 'none',
+        "& .ps-menu-button:hover": {
+          backgroundColor: "#7994CD !important",
+          color: "#76DCDC !important",
         },
-        "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
-        },
-        "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
-        },
-        "& .pro-menu-item.active": {
-          color: "#6870fa !important",
-        },
-      }}
-    >
-      <ProSidebar collapsed={isCollapsed}>
+          }}
+      >
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
           <Box
@@ -248,9 +248,9 @@ const Sidebar = () => {
             />
           </Box>
         </Menu>
-      </ProSidebar>
+      </Sidebar>
     </Box>
   );
 };
 
-export default Sidebar;
+export default SidebarMenu;
