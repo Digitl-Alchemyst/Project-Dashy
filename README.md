@@ -42,7 +42,7 @@
     Formik 2.2.9 => 2.4.2
     React Pro Sidebar 0.7.1
     Full Calendar 5.11.2 => 6.1.8
-    Nivo 0.80.0
+    Nivo 0.80.0 => 0.83.0
 
 ## Install Node Modules
 
