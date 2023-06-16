@@ -1,6 +1,5 @@
 import { useTheme, Box, Button } from '@mui/material';
 
-import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from '../../theme';
 import data from '../../data/mockClients.json';
 import Header from "../../components/Header";
@@ -9,6 +8,7 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 import { useState } from 'react';
 
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 
 
 
