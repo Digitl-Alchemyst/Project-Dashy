@@ -89,7 +89,7 @@
         <li>Scrollbar Styling</li>
         <li>Resizing of Text</li>
         <li>Resze Elements for better fit.</li>
-        <li></li>
+        <li>Reconnect to dark/light theme</li>
         <li></li>
     </list>
     <br>Widgets to Add<br>
