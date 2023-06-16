@@ -37,7 +37,7 @@
 ## Packages
 
     MUI 5.11.2 => 5.13.5
-    MUI X-Data-Grid 5.17.2
+    MUI X-Data-Grid 5.17.2 => 6.8.0
     Emotion 11.10.6 => 11.11.1
     Formik 2.2.9 => 2.4.2
     React Pro Sidebar 0.7.1
